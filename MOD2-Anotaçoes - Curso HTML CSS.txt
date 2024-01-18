@@ -1,0 +1,149 @@
+			>>>>↓HTML È CSS↓<<<<
+---------------------------------------------------------------------------------------------------------------
+			>>↓Cores↓<<
+
+- As seleção de cores e muito importante na construção de um site, pois cada cor pode expresar um sentimento diferente ao usuario. Cada cor possui algo associado, então deve ser utilizado uma paleta de cor que combine com a proposta do site.
+
+-A seleção das cores no CSS pode ser representada de 4 maneiras, Nomes, Códigos Hexadecimais,  RGB(Red, Green, Blue), é HSL(Hue, Saturation, Luminosity)
+
+Ex//
+
+<!--Representação por nomes-->
+    <h2 style="background-color: blue; color: white;">Exemplo de cores</h2>
+
+
+<!--Representação por códigos Hexadecimais-->
+    <!--Decimais: 0 1 2 3 4 5 6 7 8 9-->
+    <!--Hexadecimal: 0 1 2 3 4 5 6 7 8 9 A B C D E F-->
+    <h2 style="background-color: #0000ff; color: #ffffff;">Exemplo de cores</h2>
+
+
+<!--Representação em RGB("Red, Green, Blue")-->
+    <h2 style="background-color: rgb(0,0,255); color: rgb(255, 255, 255);">Exemplo de cores</h2>
+
+
+ <!--Representação por HSL(Hue, Saturation, Luminosity)-->
+    <h2 style="background-color: hsl(240, 100%, 50%); color: hsl(0, 0%, 100%);">Exemplo de cores</h2>
+
+
+
+			>>Circulo Cromatico<<
+
+O circulo cromatico e a meneira de encontrar cores e fazer combinações seguindo uma logica de harmonia de cores. Nesse contexto nos temos as cores Primarias, Secundarias, é Terciarias.
+
+Primárias: Amarelo-Vermelho-Azul
+
+Secundárias:Laranja-Violeta-Roxo
+
+Terciárias:Amarelo-esverdeado- Amarelo-alaranjado- Vermelho-alaranjado- Vermelho-arroxeado- Azul-arroxeado- Azul-esverdeado
+
+-Cores complementares são as cores que tem um destaque sobre outra, exemplo O violeta a cor Complementar e  e Amarelo, pois esta na aréa oposta no circulo cromatico.
+
+
+-Cores Análogas são as cores que estão proximas da cor que esta sendo utilizada.
+
+-Para criar um degrade de cores no CSS:
+//Ex
+body{
+    background-image: linear-gradient(to right,#F2D194,#F2E3D5);
+}
+
+-Para centralizar textos > text-align: center <.
+
+------------------------------------------------------------------------------------------------------------------
+		>>>SELETORES PERSONALIZADOS<<<
+
+Pode ser atribuido aos elementos no HTML Ids e Classes, isso serve para fazer personalizações especificas em itens. O Id tem uso Unico enquanto a classe Pode tem uso multiplo, no mesmo elemento pode conter mais de uma classe, ou uma classe com id, seguindo a hierarquia.
+
+-->Em HTML é id = em CSS é '#'
+-->EM HTML é class = em CSS é '.'
+
+//OBS:O Id so pode ser usado uma vez no mesmo documento, portanto se deve utilzar classe
+Usando DIVS:
+para configurar a altura = height
+para largura= width
+			>>Pseudo-classes em CSS <<
+Representadas por	:
+
+  ex: 	:active	:checked	:enabled	   :disabled    :corner-present	 
+	:empty   :end	:first      :hover	   :double-button
+
+:hover	->quando passa o mouse por cima acontece algo:
+	//ex	
+	div:hover {
+            	background-color: yellow;
+        	}
+
+div > p	-> parágrafo que está dentro da div (p é filho de div)
+
+Deixar texto de "p" invisível:
+	div > p {
+	   display: none;
+	}
+Deixar texto de "p" visível quando passar o mouse em cima:
+  (útil para criar menu)
+	div:hover > p {
+	        display: block;
+	}
+------------------------------------------------------------------------------------------------------------------
+			>>Modelos de caixas(box)<<
+
+As caixas são os espaços contidos em cada elemento, sendo elas box-level que quando utilizada quebra o paragrafo, é as inline-level que nao quebra o paragrafo.
+//Ex
+              __box-leve__	           __inline-leve__
+	<div>			<span>
+	<h1>-<h6>		<a>
+	<p>			<small>
+	<main>			<strong>
+	<header>			<em>
+	<nav>			<sup> - <sub>
+	<article>			<label>
+	<aside>			<button>
+	<footer>			<input>
+	<form>			<select>	
+	<video>			<code>
+
+			>>Manipulando Caixas<<
+
+
+Propriedades de borda:
+
+   largura	->	border-width: 10px;
+
+   estilo	->border-style: solid; (sólida);
+
+	     : dashed;	 (tracejada)
+	     : dotted;	 (pontil
+	      : double;	 (dupla)
+	      : groove;	 (em 3d)
+
+   cor 	->	border-color: red;
+
+  - Shorthand: 
+	border: 10px solid red (largura, estilo, cor)
+
+Propriedades de padding:
+	padding-top: 10px;	   (de topo)
+	padding-right: 10px;	   (à direita)
+	padding-bottom: 10px    (de baixo)
+	padding-left: 10px;	   (à esquerda)
+
+  - Shorthand: 
+	padding: 15px 10px 15px 10px;    (sent. horário: top, right, bottom, left)
+	padding: 10px; 		(os 4 lados iguais a 10px)
+	padding: 15px 10px;	 (cima e baixo 15px / esquerda e direita 10px)
+
+
+VARIÁVEIS EM CSS:
+
+É possível utilizar variáveis dentro do CSS. Isso não torna a linguagem CSS uma linguagem de programação... Ela ainda continua sendo uma linguagem de marcação, assim como o HTML. Toda linguagem de programação tem variáveis, mas nem toda linguagem que tem variável é uma linguagem de programação.
+
+As Variáveis GUARDAM VALORES para serem usados mais na frente no nosso projeto/programa. 
+
+Por que deveríamos usar variáveis em CSS? Porque isso facilita, e muito, o nosso processo de desenvolvimento e posteriormente a manutenção do projeto , caso desejemos alterar algo no futuro... Fora que tudo fica ainda mais organizado.
+
+Usando a Paleta de Cores de um projeto qualquer como exemplo, geralmente alguns desenvolvedores simplesmente fixam a Paleta de Cores (códigos das cores) de um site em um comentário no documento CSS, e copiam e colam esses códigos sempre que precisam alterar uma cor... Na realidade esse não é o modo mais adequado de se fazer isso e existe uma maneira muito melhor e prática de se obter um melhor resultado, com variáveis CSS.
+
+Para declarar variáveis em CSS, devemos criar uma Pseudo-classe especial dentro do documento CSS atual, que seria uma espécie de referência dentro desse documento.
+
+As variáveis CSS são definidas dentro da Pseudo-classe " root " ( :root {...} ). Essa pseudo-classe define as configurações para a " RAIZ DA ÁRVORE ", que vai servir para o documento inteiro . 

@@ -1,0 +1,13 @@
+fazer um site onde o usuario escolhe se que o modo alegre ou o modo sombrio. Quando clicar no botar o backgraund do site muda comforme a seleção
+
+se for alegre{
+	mudar para uma cor alegre
+	colocar uma imagem alegre
+	tocar uma musica alegre = Primavera-vivaldi
+}
+
+se for sombrio{
+	mudar para uma cor sombria
+	colocar uma imagem sombria
+	tocar uma musica sombria= tocata in g maior= bach
+}

@@ -1,0 +1,5 @@
+		>>>Hospedagem de site no Git é Github<<<
+
+Por mais que tenham o mesmo nome Git e Github são software diferentes.
+ O Git e um repositorio Local, ou seja ele salva as versões anteriores dos codigos que foram feito no dispositivo. 
+Já o Github é um repositorio remoto, ou seja ele salva os arquivos na nuvem é permite que outras pessoas possam acessar o arquivo livremente.

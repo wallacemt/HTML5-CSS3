@@ -1,0 +1,232 @@
+			>>>>↓HTML È CSS↓<<<<
+
+#HTML ->> Linguagem de Marcação De Hipertextos.
+-HTML foca no conteúdo da pagina como:
+°Textos.
+°Imagens. 
+°Videos.
+°Tabelas.
+Tags:
+abertura e fechamento de tag.
+Para Títulos = <h1> Conteudo </h1>
+Paragrafos =     <p>Conteudo </p>
+Para imagens = <img src="foto.png" alt="Exemplo de Foto">
+------------------------------------------------------------------------------------------------------------------
+#CSS ->> Linguagem de Estilos em Cascata.
+-CSS foca no design na pagina como:
+°Cores.
+°Sombras.
+°Tamanhos.
+°Posicionamento.
+Seletor:
+h1{
+     font-family:Arial;
+     font-size:20pt;
+     color:blue; ----> valor
+}
+
+-----------------------------------------------------------------------------------------------------------
+			↓↓↓HTML↓↓
+-----------------------------------------------------------------------------------------------------------
+>>Estrutura básica de documento HTML<<
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viwport"
+	content="width=device-width,
+	initial-scale=1.0">
+	<title>Documento </title>
+   </head>
+   <body>
+	<h1>Olá, Mundo!</h1>
+   </body>
+----------------------------------------------------------------------------------------------------------------
+			<<↓Adicionando simbolos é emojis↓>>
+<h1> = Titulo
+<p> = Paragrafo
+<br> = Quebra Paragrafo
+<!-- Comentario--> = Para comentar no código
+<Alguns Simbolos>
+&reg;®
+&copy;© 
+&trade;™
+&euro;€
+&pound;£ 
+&yen;¥ 
+&cent;¢ 
+&delta;δ 
+&Delta;Δ 
+&uarr; ↑
+&darr; ↓	
+Vamos Adicionar alguns emojis:
+ //Para adiconar emoji basta adiconar: "&#x" + codigo do emoji.
+ &#x1F596;
+ &#x1F913;
+----------------------------------------------------------------------------------------------------------------
+			>>↓Adicionando Imagens↓<<
+#Para adicionar imagem basta usar a tag "img"
+<img src="*Diretorio da imagem, pode ser uma imagem na propria pasta ou uma imagem da internet, basta utilizar o URL*" alt="O Nome da imagem alternativo, utilizado para acessibilidade.">
+
+#Favicon são basicamente os icones que fica ao lado do titulo do site, para adicionar basta no Head adicionar a tag"Link/favicon".
+<link rel="shortcut icon" href="HTML5.ico" type="image/x-icon">
+    <title>Favicon</title>
+----------------------------------------------------------------------------------------------------------------
+			>>↓Hierarquia de Titulos↓<<
+
+Os paragrafos seguem uma Hierarquia de niveis, que vai de 1 até 6.
+//Exemplo
+h1 = Titulo
+h2= Sub-Titulo
+h3=Sub-titulo do anterior
+...e vai até o h6 que e o ultimo nivel de hiarquia.
+
+Níveis hierárquicos seguem a sequência: <h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+- Não deve-se pular a sequência;	
+- Não são usados para definir tamanho da letra. Isso é feito em CSS;
+
+lorem: gerador de texto "lero-lero"
+
+- obs:	<p>lorem</p>	Texto de tamanho padrão
+	<p>loremN</p>	N é o nº de palavras que o texto terá.
+			->>Semantica<<-
+Para deixar um texto em Negrito = Pode ser usando o[ <b></b> ] Não semântico ou o
+[ <strong></strong> ] Semântico. 
+Para deixar em Itálico = Pode se usar o [<i>termo em Itálico</i>] não semantico ou [<em>termo em ênfase</em>] semantico
+
+a tag Mark serve para marca um text.
+
+OBS=Podemos mudar a tag tanto de abertura quanto de fechamento ao mesmo tempo usando F2 com cursor em cima de uma tag ;D
+----------------------------------------------------------------------------------------------------------------
+			>>↓Listas em HTML↓<<
+Temos dois tipos de listas, Ordenadas é não ordenadas:
+Lista Ordenada = <ol </ol>
+Lista não Ordenada= <ul </ul>
+è para adicionar itens dentro das listas= <li  </li>
+----------------------------------------------------------------------------------------------------------------
+			>>↓Links é ligações↓<<
+Para criar um link para ligar ao site externo se usa:
+Ex//
+<h1>Usando links externos</h1>
+    <p>Você pode acessar meu <a href="https://gustavoguanabara.github.io/" target="_blank" rel="external">repositório publico no Github</a></p>
+
+Usando links internos do proprio site:
+Ex//
+<h2>Usando links internos</h2>
+    <p>Esta é a primeira página dp sote. Se você quiser pode acessar também a minha <a href="pag002.html" rel="next">Segunda Pagina</a></p>
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html">página de notícias</a></p>
+----------------------------------------------------------------------------------------------------------------
+			>>Inserindo midias<<
+
+#Imagens dinamicas. São as imagens que contem respansividade com diferentes telas, para inserir a tag <picture>:
+Ex//
+<picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Img flexivel">
+</picture>
+-
+-
+-
+#Reproduzindo audios. Os audios sao bastante interesantes para se inserir, pode ser utilizado em um site de podcast, porem deve se atentar aos formatos, nem todos os navegadores pode suportar o audio que você colocar.
+Ex//
+<audio src="midia/bach.mp3" controls></audio>
+
+<!-- formatos [ MP3 WAV(muito pesado) OGG ] -->
+
+<audio preload="metadata" controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Infezlimente seu navegador não consegue reproduzir áudio. <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+-
+-
+-
+#Colocando Videos. Os videos são um recurso bem utilizado em sites, porem deve ter uma devida atenção ao tamanho, para que o site não acabe ficando pesado, além de ter um cuidado com o formato do video pois como no caso do audio, nem todos os navegadores suportam os alguns formatos,  portanto recomendase que utilze videos hospedados externamente.
+
+Ex video Hospedado Localmente//
+<video width="560" poster="imagens/tamb.png" controls autoplay loop>
+            <source src="midia/meu-video.mp4" type="video/mp4">
+            <source src="midia/meu-video.m4v" type="video/mp4">
+            <source src="midia/meu-video.webm" type="video/webm">
+            <source src="midia/meu-video.ogv" type="video/ogg">
+</video>
+
+Ex video Hospedado Externamente//
+
+<p>Inserindo vídeos do Youtube</p>
+
+ <iframe width="560" height="315" 			src="https://www.youtube.com/embed/LW0bhKitRBk?		si=C3hEDWEFMZR8UrTB" title="YouTube video player" frameborder="0" 		allow="accelerometer; autoplay; clipboard-write; encrypted-media; 		gyroscope; picture-in-picture; web-share" allowfullscreen>
+</iframe>
+
+<h1>Inserindo videos do Vimeo</h1>
+
+<iframe 
+	src="https://player.vimeo.com/video/351640689?	h=ea4f76dc4f&color=ff0179&portrait=0" width="560" height="327" 	frameborder="0" allow="autoplay; fullscreen; picture-in-picture" 	allowfullscreen>
+</iframe>
+-----------------------------------------------------------------------------------------------------------
+			↓↓↓CSS↓↓
+-----------------------------------------------------------------------------------------------------------
+CSS codigos inline, é o Css que é inserido na tag html do elemento que deseja persoanlizar.
+Ex//
+<body style="background-color: lightskyblue; font-family: Arial; font-size: 20px ;">
+    <h1 style="color: mediumblue;">Capítulo 1</h1>
+ -
+-
+-
+
+CSS codigos internos é uma maneira organizada de estilizar uma pagina, mas a desvantagem é, caso precise alterar outras paginas tera que alterar uma por uma.
+Ex//
+ <style>
+        body {
+            background-color: lightskyblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-align: center;
+        }
+        h1{
+            color: darkblue;
+            background-color: lightblue;
+        }
+        h2{
+            color: darkred;
+        }
+        p{
+            text-align: justify;
+        }
+    </style>
+-
+-
+-
+CSS Codigos Externos, è a maneira mais eficaz de se utiizar CSS na pagina, pois basta ligar o link do arquivo no documento, e toda alteração que for feita sera aplicada para todas as paginas, alem da posibilidade de adicionar mais de um link CSS em uma mesma pagina.
+
+Ex//
+
+ <link rel="stylesheet" href="style.css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
