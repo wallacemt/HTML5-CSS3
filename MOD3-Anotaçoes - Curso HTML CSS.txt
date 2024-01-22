@@ -1,5 +1,24 @@
 		>>>Hospedagem de site no Git é Github<<<
 
-Por mais que tenham o mesmo nome Git e Github são software diferentes.
+--> Por mais que tenham o mesmo nome Git e Github são software diferentes.
  O Git e um repositorio Local, ou seja ele salva as versões anteriores dos codigos que foram feito no dispositivo. 
 Já o Github é um repositorio remoto, ou seja ele salva os arquivos na nuvem é permite que outras pessoas possam acessar o arquivo livremente.
+
+		>>Propriedade de backgroud imagem<<
+
+--> Pode ser utilizado diversas formas de background em uma pagina, sendo elas ;
+
+-_ background-color
+-_ bacground- image: linear-gradient(degrade)
+-_bacground-image: url() //que pode ser, tanto uma imagem local  como externa de sites.
+
+--> Por padrão ao inserir imagens a mesma ira se repedir em todo local da pagina mas utilizando os comandos ;
+ 
+-_background-repeat: repeat // a imagem ira se repetir por toda pagina
+
+-_background-repeat: no-repeat // a imagem não ira ser repetida, ira ter somente uma no canto superior da pagina
+
+-_background-repeat: repeat-x // ira ser repetida somente no eixo orizontal
+
+-_background-repeat: repeat-y //ira ser repetida somente no eixo vertical 
+
