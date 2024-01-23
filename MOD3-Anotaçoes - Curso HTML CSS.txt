@@ -14,11 +14,21 @@ Já o Github é um repositorio remoto, ou seja ele salva os arquivos na nuvem é
 
 --> Por padrão ao inserir imagens a mesma ira se repedir em todo local da pagina mas utilizando os comandos ;
  
--_background-repeat: repeat // a imagem ira se repetir por toda pagina
+-_background-repeat: repeat // a imagem ira se repetir por toda pagina.
 
--_background-repeat: no-repeat // a imagem não ira ser repetida, ira ter somente uma no canto superior da pagina
+-_background-repeat: no-repeat // a imagem não ira ser repetida, ira ter somente uma no canto superior da pagina.
 
--_background-repeat: repeat-x // ira ser repetida somente no eixo orizontal
+-_background-repeat: repeat-x // ira ser repetida somente no eixo orizontal.
 
--_background-repeat: repeat-y //ira ser repetida somente no eixo vertical 
+-_background-repeat: repeat-y //ira ser repetida somente no eixo vertical .
+
+--> algumas formas de tentar redimensionar a imagem no background da pagina são;
+
+-_background-size: auto //(padrão) a imagem de fundo será aplicada em seu tamanho original.
+
+-_background-size: length//Redimensiona a largura da imagem e faz a altura se adaptar automaticamente. Podemos também informar as duas dimensões na sequência outambém usar valores percentuais.
+
+background-size: cover // Muda o tamanho da imagem para que ela seja sempre exibida totalmente na tela, sem nehum corte.
+
+-_bacground-size: contain //Redimensiona a imagem para que ela cubra o contêiner, mesmo que para isso ocorram alguns eventuais cortes.
 
