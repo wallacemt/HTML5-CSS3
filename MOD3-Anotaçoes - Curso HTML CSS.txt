@@ -32,3 +32,18 @@ background-size: cover // Muda o tamanho da imagem para que ela seja sempre exib
 
 -_bacground-size: contain //Redimensiona a imagem para que ela cubra o contêiner, mesmo que para isso ocorram alguns eventuais cortes.
 
+			>>>Usando Tabelas<<<
+
+As tabelas são um recurso bastante util no HTML, contanto que não seja utilizada para estrutar uma pagina, As tabelas (simples)  seguem uma hierarquia sendo elas;
+
+
+	|<table>
+   	|       ----<tr></tr>
+         	|            ----<td></tr>
+	|</table>
+
+tr = São linhas
+td= São os dados
+
+Se as hierarquias não forem seguidas os obgetos podem aparecer antes ou depois. O W3C diz que o fechamento de tags de tabelas são opcionais, mas para garantir uma boa organização no codigo e bem util que as tags sejam fechadas para evitar erros.
+
