@@ -46,4 +46,13 @@ tr = São linhas
 td= São os dados
 
 Se as hierarquias não forem seguidas os obgetos podem aparecer antes ou depois. O W3C diz que o fechamento de tags de tabelas são opcionais, mas para garantir uma boa organização no codigo e bem util que as tags sejam fechadas para evitar erros.
+	
+			__Alinhamentos__
 
+Para alinhar os dados dentro de uma tabela é utilizado;
+
+//Horizontal
+text-align = center // centro laft//direito(padrão) right//esquerdo
+
+//Vertical
+vertical-align = middle//centro top//em cima bottom//em baixo
