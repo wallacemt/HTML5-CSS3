@@ -56,3 +56,26 @@ text-align = center // centro laft//direito(padrão) right//esquerdo
 
 //Vertical
 vertical-align = middle//centro top//em cima bottom//em baixo
+
+	Hierarquia para Tabelas Grandes
+<!--
+        Anatomia Para TABELAS GRANDES
+        TABLE  
+            CAPTION - Legenda
+            THEAD - Cabeça
+                TR, TD, TH
+            TBODY - Corpo
+                TR,TD,TH
+            TFOOT - Pé
+                TR, TD, TH
+    -->
+OBS# Para utilizar o  TH - quando for titulo, Td - sempre que for dado.
+
+Para fazer efeito Zebrado, Basta;
+
+tbody > tr:nth-child(odd){  //2n-1, odd = impar
+            background-color: white;
+        }
+tbody > tr:nth-child(even){  //2n-1, even= par
+            background-color: lightgray;
+        }
