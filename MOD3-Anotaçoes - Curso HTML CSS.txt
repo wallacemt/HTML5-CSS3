@@ -79,3 +79,33 @@ tbody > tr:nth-child(odd){  //2n-1, odd = impar
 tbody > tr:nth-child(even){  //2n-1, even= par
             background-color: lightgray;
         }
+--Para fixar o cabeçalho de uma tabela basta;
+//deixar a tabela em posição relativa
+table{
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+}
+//apos isso selecionar o thead > tr > th e deixar com posição sticky(pegajoso) o top com -1 ou 0 px e background-color com a mesma cor que esta no cabeçalho;
+
+thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+}
+		             <<Mesclagem de celulas>>
+Para mesclar celulas basta;
+
+// para Fazer a mesclagem de uma coluna ao lado de uma celula basta usar o comando coldspan="(quantidade de colunas pra mesclar)"
+<tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+</tr>
+
+//para mesclar uma linha basta usar o rowspan="(quantidade de linha para mesclar)"
+
+<tr>
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td rowspan="2">F</td>
+</tr>
