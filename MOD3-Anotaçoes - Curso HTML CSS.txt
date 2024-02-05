@@ -4,6 +4,7 @@
  O Git e um repositorio Local, ou seja ele salva as versões anteriores dos codigos que foram feito no dispositivo. 
 Já o Github é um repositorio remoto, ou seja ele salva os arquivos na nuvem é permite que outras pessoas possam acessar o arquivo livremente.
 
+--------------------------------------------------------------------------------------------------------------------
 		>>Propriedade de backgroud imagem<<
 
 --> Pode ser utilizado diversas formas de background em uma pagina, sendo elas ;
@@ -32,6 +33,7 @@ background-size: cover // Muda o tamanho da imagem para que ela seja sempre exib
 
 -_bacground-size: contain //Redimensiona a imagem para que ela cubra o contêiner, mesmo que para isso ocorram alguns eventuais cortes.
 
+--------------------------------------------------------------------------------------------------------------------
 			>>>Usando Tabelas<<<
 
 As tabelas são um recurso bastante util no HTML, contanto que não seja utilizada para estrutar uma pagina, As tabelas (simples)  seguem uma hierarquia sendo elas;

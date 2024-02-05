@@ -1,0 +1,8 @@
+				>>IFREME<<
+O que são Iframes? = A traduçao teorica fica quadros em linhas, mas o iframe e basicamente uma aba de navegação que e aberta dentro do site, como se fosse uma mini janela onde, da para acesar outros sites sem sair do qual você está.
+
+-Para alterar pode ser utilizado os parametros 'heigth' 'width' na mesma linha do iframe, ou utilizar um parametro no proprio CSS, que sobrepõe todos os outros, também a opção de rolagem dentro do iframe pode ser desligada com o paramentro 'scolling', mas nem em todos os navegadores funciona(aí ja não e problema meu kk).
+
+-Pode ser utilizado iframes das proprias paginas ou de links clicaveis adicionando o Target="nome do iframe", assim quando o usuario cliclar no link especifico ira aparecer dentro do iframe.
+
+--------------------------------------------------------------------------------------------------------------------
