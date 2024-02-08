@@ -5,4 +5,15 @@ O que são Iframes? = A traduçao teorica fica quadros em linhas, mas o iframe e
 
 -Pode ser utilizado iframes das proprias paginas ou de links clicaveis adicionando o Target="nome do iframe", assim quando o usuario cliclar no link especifico ira aparecer dentro do iframe.
 
---------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------					>>Formulário<<
+
+Para a criação de um formulário simples basta utilizar a tag <from>
+
+//ex
+<form>
+        <p>Nome: <input type="text" name="nome" id="nome"></p>
+        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"> </p>
+        <p><input type="submit" value="Enviar"></p>
+</form>
+
+E de suma importancia a utilizaçao de label para a relação entre os objetos, etiquetar/ligar o nome ao input corespondente, o labeel tem um importante para o html e a linguagem Php 
