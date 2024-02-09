@@ -16,4 +16,6 @@ Para a criação de um formulário simples basta utilizar a tag <from>
         <p><input type="submit" value="Enviar"></p>
 </form>
 
-E de suma importancia a utilizaçao de label para a relação entre os objetos, etiquetar/ligar o nome ao input corespondente, o labeel tem um importante para o html e a linguagem Php 
+E de suma importancia a utilizaçao de label para a relação entre os objetos, etiquetar/ligar o nome ao input corespondente, o labeel tem um importante para o html e a linguagem Php .
+
+Um dos metodos para 'proteger' os dados e utilizar o comando  method='post', assim os dados mais delicados não ira aparecer na url do site, mas isso nao protege os dados 100% entao deve-se estudar http, porem o method='get' que é o Padrão e recomendado para formularios que não contem informaçoes delicadas, mas com um limite de envio de ate 3000 caracteres.
