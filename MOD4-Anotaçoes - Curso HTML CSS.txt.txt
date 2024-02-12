@@ -19,3 +19,18 @@ Para a criação de um formulário simples basta utilizar a tag <from>
 E de suma importancia a utilizaçao de label para a relação entre os objetos, etiquetar/ligar o nome ao input corespondente, o labeel tem um importante para o html e a linguagem Php .
 
 Um dos metodos para 'proteger' os dados e utilizar o comando  method='post', assim os dados mais delicados não ira aparecer na url do site, mas isso nao protege os dados 100% entao deve-se estudar http, porem o method='get' que é o Padrão e recomendado para formularios que não contem informaçoes delicadas, mas com um limite de envio de ate 3000 caracteres.
+
+			<<Radio>>
+Botão que permite apenas uma opção, entao ao criar deve-se colocar o mesmo nome com id diferente em todos os elementos.
+//ex
+<input type="radio" name="Sexo" id="isxmas" value="M"> <label for="isxmas">Masculino</label><br>
+input type="radio" name="Sexo" id="isxfem" checked value="F"> <label for="isxfem">Feminino</label>
+
+			<<Checkbox>>
+Já as checkbox são elementos selecionaveis, pode ser escolhido mais de um por vez, para deixar um elemento pré selecionado basta adicionar a tag checked.
+//ex
+<input type="checkbox" nome="esbas" id="iesbas" checked> <label for="iesbas">Basquete</label><br>
+            <input type="checkbox" name="esfut" id="iesfut" checked> <label for="iesfut">Futebol</label><br>
+            <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label><br>
+            <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label><br>
+
