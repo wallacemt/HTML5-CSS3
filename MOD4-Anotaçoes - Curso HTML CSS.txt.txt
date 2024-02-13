@@ -84,3 +84,11 @@ Cria uma area de texto onde o usuario pode escrever livremente, sem restriçoes 
 //ex
 <label for="imsg">Mensagem: </label><br>
             <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
+--------------------------------------------------------------------------------------------------------------------
+			<<<MEDIA QUERIES>>>
+È uma ferramenta que permite criar versoes da pagina para diferentes ocasiões. Por exemplo uma pagina de noticia, caso o usuario queira imprimir a pagina, não faz sentido que alguns elementos apareção na area de impressão, entao deve ser feita uma media query especifica para impressora.
+//ex
+	// CSS feito para a tela principal.
+<link rel="stylesheet" href="estilos/style.css" media="screen">
+	//CSS feito para area de impressão
+<link rel="stylesheet" href="estilos/impressora.css" media="print">
