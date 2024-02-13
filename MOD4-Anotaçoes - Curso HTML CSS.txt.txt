@@ -34,3 +34,53 @@ Já as checkbox são elementos selecionaveis, pode ser escolhido mais de um por 
             <input type="checkbox" name="esnat" id="iesnat"> <label for="iesnat">Natação</label><br>
             <input type="checkbox" name="esten" id="iesten"> <label for="iesten">Tênis</label><br>
 
+		<color>
+Exibe um menu de opçao para selecionar a cor desejada, pode ser representada em rbg ou exadecimal.
+//ex
+ <p>
+            <label for="icor">Cor</label>
+            <input type="color" name="cor" id="icor" value="#00ff00">
+</p>
+
+		<range>
+Apresenta uma area que permite arastar para direita ou esquerda, com um valor maximo padrão de 100 mas pode ser alterado.
+//Ex
+<p>
+            <label for="inivel">Nivel de Satisfação</label>
+            <input type="range" name="Nivel" id="inivel" min="1" max="5" value="5">
+</p>
+		<file>
+Permite que o usuario envie arquivos, porem quando for adicionar esse input certificar que o formulario estar com o method='Post', para que o arquivo seja utilizado da maneira correta.
+//Ex
+<p>
+            <label for="ifoto">Foto de Perfil</label>
+            <input type="file" name="foto" id="ifoto">
+</p>
+
+		<select>
+Gera um menu lateral para que o usuario possa escolher a opção, porem se algum elemento nao estiver presente no menu, não pode ser adicionado pelo usuario, uma usabilidade para essa teg e na escolha de estados.
+//EX
+<select name="estado" id="iest">
+                <option value="" selected>---Escolha---</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+</select>
+		<datalist>
+Semelhante ao select, porem aparece uma lista criada pelo desenvolvedor, mas o usuario pode escrever no input, caso não tenha a opção desejada.
+//ex
+<label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="listaprof">
+            <datalist id="listaprof">
+                <option value="ADM">Administrador</option>
+                <option value="CONT">Contabilidade</option>
+                <option value="DEV">Desenvolvedor</option>
+                <option value="PROF">Professor</option>
+            </datalist>   
+		<textarea>
+Cria uma area de texto onde o usuario pode escrever livremente, sem restriçoes de tamanho, porem deve ser adicionado com o formulario com o method ='Post' pois assim não tera poblemas de tamanho, pois o get suporta apenas 3000 bites ou caracteres.
+//ex
+<label for="imsg">Mensagem: </label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10" placeholder="Sua mensagem"></textarea>
