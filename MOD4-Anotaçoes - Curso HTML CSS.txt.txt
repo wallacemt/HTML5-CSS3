@@ -87,6 +87,9 @@ Cria uma area de texto onde o usuario pode escrever livremente, sem restriçoes 
 --------------------------------------------------------------------------------------------------------------------
 			<<<MEDIA QUERIES>>>
 È uma ferramenta que permite criar versoes da pagina para diferentes ocasiões. Por exemplo uma pagina de noticia, caso o usuario queira imprimir a pagina, não faz sentido que alguns elementos apareção na area de impressão, entao deve ser feita uma media query especifica para impressora.
+
+media query == media type + media fetures
+
 //ex
 	// CSS feito para a tela principal.
 <link rel="stylesheet" href="estilos/style.css" media="screen">
