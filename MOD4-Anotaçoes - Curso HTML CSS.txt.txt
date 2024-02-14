@@ -95,3 +95,22 @@ media query == media type + media fetures
 <link rel="stylesheet" href="estilos/style.css" media="screen">
 	//CSS feito para area de impressão
 <link rel="stylesheet" href="estilos/impressora.css" media="print">
+
+Os media queries podem ser adicionados na area do proprio html ou em um css unico utilizando os metodos @media all, @media screen and (orientation: portrait), @media screen and (orientation: landscape). Essa maneira evita a criação de varios css, recomendado para projetos pequenos, pois com forme o projeto vai crecendo se faz necessario a organização em css diferentes.
+
+		<Mobile First>
+E a teoria que consiste em fazer a pagina primeiro pensando nos dispositivos moveis, essa pratica tras diverso beneficos a pagina, como =>
+
+-Mais recomendações em sites de buscas;
+-Mais velocidade ao site;
+-Satisfação do usuario;
+-Credibilidade;
+
+/* Typical Device Breakpoints
+-------------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
