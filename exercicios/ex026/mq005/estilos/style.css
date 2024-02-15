@@ -57,6 +57,7 @@ main{
     border-radius: 10px;
     margin-top: 10px;
     margin-bottom: 20px;
+    overflow-x: hidden;
 }
 article > div{
     width:90vw;
@@ -65,10 +66,21 @@ article > div{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: contain;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    position:static;
 }
 
 article > h2{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 2vh;
+    text-align: center;
+    text-decoration:dotted;
+    height: 20px;
+    border-radius: 5px;
     padding-bottom: 20px;
+    background-image: linear-gradient(to right,#AD445E,#d05d9e7e,#d05d9e00);
 }
 
 article > p{

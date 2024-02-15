@@ -114,3 +114,15 @@ Tablet: 768px até 992px
 Desktop: 992px até 1200px
 Grandes telas: acima de 1200px
 */
+
+		<Menu no formato de hambuger>
+
+Para fazer esse menu, deve ser adicionado o icone, que pode ser encontrado no site do google itens ou outros sites, em seguida deve ser estilizar o menu, logo apos deve ser adicionado o display=''none, no menu que que ocultar, logo apos isso deve adicionar a função onclick no menu icone que foi adicionado, em seguida deve fazer um js dessa meneira:
+//EX
+function clickMenu() {
+        if(itens.style.display == 'block'){
+        itens.style.display = 'none'
+        }else{
+            itens.style.display = 'block'
+         }
+}
