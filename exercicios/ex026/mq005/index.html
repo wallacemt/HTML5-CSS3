@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="estilos/style.css">
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <menu>
+        <i id="burger" class="material-icons" onclick="clickMenu()">menu</i>
+        <menu id="itens">
             <ul>
                 <li><a href="#">Opção 1</a></li>
                 <li><a href="#">Opção 2</a></li>
@@ -48,5 +49,14 @@
             <p>Portanto, essas empresas lixaram as arestas de seus bots, usando técnicas como IA constitucional. e reforçar a aprendizagem a partir do feedback humano para torná-los tão previsíveis e desinteressantes quanto possível. Eles também adotaram uma marca enfadonha – posicionando suas criações como assistentes de confiança para funcionários de escritório, em vez de enfatizar suas características mais criativas e menos confiáveis. E muitos agruparam A.I. ferramentas dentro de aplicativos e serviços existentes, em vez de dividi-los em seus próprios produtos.</p>
         </article>
     </main>
+    <script>
+        function clickMenu() {
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
 </body>
 </html>
